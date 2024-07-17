@@ -1,0 +1,177 @@
+
+
+07-16-2024 JS Introduction
+
+MAC:
+Search for Terminal and run the command
+node -v
+
+
+WINDOWS:
+Search for cmd or command prompt adn run the command
+node -v
+
+
+
+Computer:
+
+it is everywhere in our lives
+
+
+development tool
+instructions/commands
+applications/software
+search engine/browsers
+calculator
+code
+electronic device/machine
+input/output
+ones and zeros / binary - ASCII
+
+
+
+Natural languages
+English/German/Arabic - Human languages
+Grammer
+
+
+Ambiquity/conflict/confusion
+
+
+Programming languages
+JavaScript/TypeScript/Java/C#/Go
+Syntax: grammer of the programming language
+
+
+
+! 	exclamation/not operator
+?	question mark
++ 	plus
+=	equal
+-	minus/dash/hyphen
+% 	percentage/remainder/modulus
+/ 	division/forward slash
+\   backward slash
+_ 	under score
+* 	asterix/star/wild card
+{}	curly braces
+() 	parantheses
+[] 	square brackets
+| 	OR/pipe
+& 	AND
+$ 	dollar sign
+# 	hash
+@ 	
+~ 	tilde
+^ 	carat
+. 	period/dot
+, 	coma
+: 	colon
+;	semi-colon
+''	single quotes
+""	double quotes
+`` 	template literals
+
+
+Java vs JavaScript
+-2 separate programming languages
+-Java heavily used with backend application (Databases & servers)
+-JavaScript used for frontend application building
+
+
+
+
+COUNTING SYSTEM
+0, 1, 2, 3, 4, 5, 6, 7, 8, 9
+based-10 
+1
+10
+100
+1000
+10000
+100000
+
+1500
+
+
+
+based-2 / binary code / computer language
+0, 1
+
+
+1
+2
+4
+8
+16
+32
+64
+128
+256
+512
+1024
+
+Storage Units
+8 bits = 1 byte
+1024 bytes = 1 kb
+1024 kb    = 1 mb
+1024 mb    = 1 gb
+
+
+1 = ON = true
+0 = OFF = false
+
+
+Human 			Computer
+0 				00000000
+1 				00000001
+2 				00000010
+3 				00000011
+4 				00000100
+
+
+
+Dad
+-Each letter has a decimal representation with ASCII
+
+Char		Decimal 		Binary
+D 			68 				01000100
+a 			97  			01100001
+d 			100 			01100100
+
+
+Dad = 01000100-01100001-01100100
+
+SPACE = 32 = 00100000
+
+
+Hello != hello
+abc != ABC
+
+ab cd = abcd
+
+00100000
+
+
+
+KNOW special characters and use them properly
+BE CAREFUL ABOUT space as it is also a character
+BE CAREFUL ABOUT lowercase and uppercases
+
+
+
+"Pineapple" -> count how p letters we have in this word
+case-sensitive -> 2
+case-insensitive -> 3
+
+Programing languages keywords
+class 
+var
+let
+const
+function
+for
+if
+else
+switch
+static
