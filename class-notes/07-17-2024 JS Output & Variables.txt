@@ -1,7 +1,7 @@
 
 
 
-07-17-2024 JS Output
+07-17-2024 JS Output & Variables
 
 Binary code: ones and zeros: computer language
 Code: Source code: This is a code written using a programming language 
