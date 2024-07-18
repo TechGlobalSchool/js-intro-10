@@ -1,0 +1,123 @@
+
+
+
+07-17-2024 JS Output
+
+Binary code: ones and zeros: computer language
+Code: Source code: This is a code written using a programming language 
+
+Execute: executor: execution: Run 
+Compile: compiler: compilation: Check if there is any syntax error in the code
+
+JavaScript vs other languages 
+
+
+ASCII table: 
+
+Automation tools that are demand: Cypress & Playwright 
+Selenium demand is decreasing
+
+50-60 percent of the jobs -> Selenium
+
+Cypress -> 10-15 percent
+Playwright -> 10-15 percent 
+
+10 percent: The other tools
+
+
+Statement: Any line of code that is written with a programming language
+
+Some statement examples
+console.log('Hello'); // This is JS or TS  statement
+System.out.println("Hello"); // This is Java statement
+Console.WriteLine("Hello"); // This is C# statement
+
+
+COMMENTS: are used for short descriptions.
+
+// used for single line COMMENTS
+
+/*
+    Multi-line
+    comments
+*/
+
+
+HOW TO DUPLICATE LINES 
+MAC
+Option + Shift + up arrow
+Option + Shift + down arrow
+
+WINDOWS
+Alt + Shift + up arrow
+Alt + Shift + down arrow
+
+
+
+VARIABLES:
+-it is a special container that stores a value
+-you can change the initial value ? 
+
+
+var-let-const 
+
+Before 2015 (ES6)
+-There was only var keyword used for variables 
+-You can re-assign values to var variables 
+
+After 2015 (ES6) 
+-JS introduced 2 new keywords: let and const to be used instead of var keyword 
+-let can be re-assigned with a new value
+-const is used for constants and cannot be re-assigned
+
+-let can be declared and assigned a value later
+-let variable value is going to be undefined if it is declared but not assigned with any value
+-const cannot be declared without a value and MUST always be initialized with an initial value
+
+
+Data Types:
+string: is a text data type which can be stored in variables using single or double quotes
+number: is number data which can be stored in variables without quotes
+
+5 + 5 = 10
+'5' + '5' = '55'
+'abc' + 'xyz' = 'abcxyz'
+
+Concatenation: combining multiple strings together using + operator 
+
+number + number : arithmetic operation 
+string + string : Concatenation
+string + number : 
+
+'5' + 3 = '53'
+'5' + 3 + 2 = '532'
+'5' + (3 + 2) = '55'
+2 + 1 + '0' = '30'
+
+'Hello' + 'World' = 'HelloWorld'
+
+
+Variable Naming: How should we name our variables?
+firstName
+
+Convention: it is not a written rule but followed by all the coders/programmers
+
+
+
+let age;                    true
+let AGE;                    true but not preferred
+let shift$;                 true 
+let number of students;     false
+let _firstLetter;           true 
+let 8students;              false 
+let isWheatherSnowing#;     false 
+let @balance;               false
+
+
+
+const name, age;            false
+let n1 = 45, n2;            true
+const num1 = 45, num2;      false 
+let x, let y;               false / Error             
+let a; let b;               true but not preferred
+let i1; i2;                 false / looks fine for compilation but we got Error when we execute                 
