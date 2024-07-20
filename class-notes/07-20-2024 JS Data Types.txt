@@ -1,0 +1,159 @@
+
+
+07-20-2024 JS Data Types
+
+
+RECAP:
+
+Output statements: console.log()
+This is a pre-built method used to output some data, text to console for debugging purposes.
+
+Debugging: Trouble-shooting the program to find issues, logic errors etc.
+
+Escape Sequances: 
+\' insert a single quote
+\" insert a double quote 
+\\ insert a backward slash 
+\t insert a tab space 
+\n insert a new line 
+
+With ES6, JS added with Backticks which provides Template Literals.
+These backticks allows us to insert any special characters in our text including tab space or new line
+
+
+`   Hello,
+
+    Today is Saturday and we are here to learn more
+about 'JavaScript' and its data types.`
+
+
+// single line comments
+/*
+Multi line comments
+*/
+
+/**
+*Documentation
+*/
+
+
+Variables: 
+Special containers used to store data and these variables can be accessed later in your program. 
+
+var-let-const are used to declare or initialize variables in JS and TS. 
+
+
+Syntax: Initialization
+var variableName = value;
+let variableName = value;
+const variableName = value;
+
+Declaration:
+var variableName; // undefined
+let variableName; // undefined 
+
+Assignement:
+variableName = value;
+
+Re-assignement:
+variableName = value;
+
+
+Variable Naming Rules and Conventions:
+Rule: is syntax and we HAVE TO follow 
+Convention: not a rule and will not break the program if you do not follow but it is highly recommended
+and followed by programmers 
+
+RULES:
+- You cannot start variable with a digit
+- No special characters allowed except _ (underscore), $, and other currency signs.
+- You cannot use space
+- You cannot use a variable name twice in the same file when they have the same scope 
+- You cannot use reserved keywords: var, let, const, function, class, static, finally, abstract
+
+CONVENTION:
+- Variable names should always be meaningful 
+- camelCase rule is followed for variables which may have a few words in it. Ex: numberOfStudentsInBatch10
+- Variable names usually (99 %) starts with lowercase letters 
+  SSN, ZIP, dateOfBirth, DOB, dob, TIN, VIN, MTN, phoneNumber, mobileTelephoneNumber
+-We do not prefer too long variable names
+
+number_of_students_in_batch_10, numberOfStudentsInBatch10
+
+
+DATA TYPES: 
+
+Primitive Types: basic types that usually stores a piece of information
+7 primitives:
+string: text 
+number: number 
+bigint: large number 
+boolean: true or false 
+undefined: 
+null: 
+symbol:
+
+
+Reference Types: complex types which can store more information
+arrays, objects, maps, sets, dates, math
+
+1. String: a sequence of characters (zero, one or multiple characters)
+    We store strings in single or double quotes 
+    let name = 'John';
+    let city = "Chicago";
+
+    ''          -> empty string 
+    ' '         -> string
+    '123'       -> string 
+    'undefined' -> string
+    'null'      -> string 
+
+2. Number: is used to store all absolute and decimal numbers (8 bytes)
+Whole numbers - absolute numbers: 1, 2, 10, 25, 100, 1000
+Decimal numbers - floating numbers: 2.5, 10.99, 1.3478563485763846, 3.14
+
+
+3. BigInt: used to store larger numbers (more than 8 bytes)
+
+
+
+
+= vs == vs === 
+=       assignment operator
+==      comparison operator (loose)
+===     comparison operator (strict)
+
+3 == 3      -> true 
+3 == '3'    -> true (it checks the value only not the data type)
+3 === '3'   -> false (it checks both the value and the data type)
+
+'5' === 'five'  -> false 
+'5' === '50'    -> false 
+'5' === '5'     -> true
+
+
+
+Deprecation: deprecated 
+var is reserved keyword but it may get deprecated in the future as we use let and const. 
+
+
+undefined vs null 
+undefined is the default type when you declare a variable but do not provide any value.
+null is specially stating that this variable holds no value. Absence of information.
+
+typeof undefined will return undefined 
+typeof null will return object
+
+let laptopModel;
+
+
+ZIPCODE: "12345 1234", "12345 123", "12345 -1234"
+PHONE: "000.000.0000", "000 000 0000", "(000) 000-0000"
+
+Object data type is used to store key-value pairs, properties.
+firstName => 'John'
+lastName => 'Doe'
+age => 25
+phoneNumber => '000-000-0000'
+email => 'johndoe@gmail.com'
+password => 'john1234'
