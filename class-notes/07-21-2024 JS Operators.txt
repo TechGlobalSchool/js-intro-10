@@ -1,0 +1,109 @@
+
+
+07-21-2024 JS Operators
+
+RECAP:
+
+Data types:
+1. Primitives
+    - Programmer cannot create primitive data types 
+    1. string: text 
+    2. number: absolute/decimal numbers 
+    3. boolean: true/false 
+    4. undefined: when variable declared but not assigned with a value 
+    5. null: explicitly stating the absence of data/value 
+    6. bigint: large numbers
+    7. symbol: 
+
+2. Reference Types (Objects)
+    - You are allowed create your custom objects or reference types
+
+Arrays: is a collection used to store multiple data which are similar (not necessarily)
+Set, Map, List
+
+const arr = [ 12, 'John', '123', true, null ]; // not preferred much to store different data type in an array but still could be
+
+const cities = [ 'Chicago', 'Rome', 'Berlin', 'Atina' ];
+
+Objects: used to store key-value pairs (properties)
+
+const car = {
+    make: 'Volkswagen',
+    model: 'Jetta',
+    year: 2022,
+    mileage: 10000,
+    VIN: '12345ABCDE1234567'
+};
+
+
+= vs == vs === 
+
+=       assignment operator
+
+
+COMPARISON
+==          (loose)         checks only values and returns true if they are same value. It does not care about the data type
+===         (strict)        checks both the values and types. Returns true if both are equal, or false otherwise
+
+
+3 == '3'        true 
+3 === '3'       false
+
+
+MAC CLI commands 
+Windows CLI commands
+
+GUI - Graphical User Interface
+
+
+REMAINDER / MODULUS 
+
+27 % 6 = 3                       4 * 6 = 24
+104 % 25 = 4
+69 % 7 = 6
+
+
+20 % 5 = 0
+
+3 % 6 = 3
+
+124726347652 % 124726347653 = 124726347652
+
+1. If the number on the left of the operator is less than the one on the right, then the remainder is the left number
+    3 % 6 = 3
+2. If the number on the left is divisible by the number on the right, then the remainder is always zero.
+    100 % 50 = 0
+3. If the number on the left is greater than the number on the right, then you will calculate and find the remainder.
+
+
+3 ** 3 - 10 + 25 % 2 + 7
+27 - 10 + 25 % 2 + 7
+25 - 10 + 1 + 7
+25
+
+let a = 5, b = 20;
+
+
+ORDER OF OPERATION 
+-Parantheses
+-Exponent
+-Multiplication and division
+-Modulus/remainder
+-Addition and substration
+
+
+27 / 9 * 3 = 9
+
+3 + (13 - 2 ** 3) / 2
+3 + (13 - 8) / 2
+3 + 5 / 2
+3 + 2.5
+5.5
+
+
+var is an old keyword used for variables
+2015 - ES6 => let and const 
+
+const pi = 3.14; 
+
+pi = 5; // Error
