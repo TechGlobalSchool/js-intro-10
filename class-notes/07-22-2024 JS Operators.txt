@@ -1,0 +1,146 @@
+
+
+
+07-22-2024 JS Operators
+
+RECAP: 
+
+assignment, arithmetic calculation, comparison, logical
+
+Arithmetic: +, -, /, *, **, %, ++, --
+Assignment: =, +=, -=, /=, *=, **=
+
+
+COMPARISON OPERATORS:
+All the comparison operators returns a boolean (true or false)
+
+let x = 5, y = 10, z = '5';
+
+console.log(x == z); // true
+console.log(x === z); // false 
+
+console.log(x != y); // true 
+console.log(x != z); // false 
+console.log(x !== z); // true
+
+console.log(x > z); // false 
+console.log(x < y); // true 
+
+console.log(y >= (2 * 5)); // true 
+console.log(x <= 5); // true 
+
+console.log(3 < 10); // true 
+
+
+
+
+
+
+let x = 10, y = 20, z = "10";
+
+x == z;             true
+x === z;            false
+y < z;              false 
+x <= y;             true 
+x >= z;             true 
+y > x;              true 
+x >= y;             false 
+(x >= z) < x;       true     
+
+
+
+LOGICAL OPERATORS
+Result of logical operators will be boolean (true or false)
+&& 	logical and
+|| 	logical or
+! 	logical not
+
+
+3 > 1 && 1 > 10             false 
+
+true && true        true 
+true && false       false 
+false && true       false 
+false && false      false
+
+
+3 <= 5      true        -> 3 is less than OR equals 5
+
+1 === 1 || !false           true 
+2 == 3 || 5 < 10            true 
+
+1 == 1 || 2 < 3             true 
+
+1 != 1 || 2 > 5             false 
+
+
+When you have AND (&&) used with 2 expressions, 
+    -The only way to get true: both of them should be true 
+    -If one of them or both are false, then the result is false
+
+When you have OR (||) used with 2 expressions;
+    -The only way to get false: both of them should be false 
+    -If one of them or both are true, then the resukt is true
+
+
+    !(3 > 1 && !true) && 5 != '5'       -> false
+    !(true && false) && 5 != '5'
+    !false && 5 != '5'
+    true && false 
+    false
+
+FALSY 
+0
+''      -> empty string
+false 
+null 
+undefined 
+NaN
+
+Any other values except the falsy ones are truthy
+
+
+_____  &&  _______
+_____  ||  _______
+
+'Hello' && 'Hi'
+
+
+Compiled languages: TS, Java, C#
+Strict, more syntax rules
+
+Interpreted langauges: JS 
+It is more flexible and evaluates expression more like human way
+
+
+
+!false      -> true
+!true       -> false 
+
+!(true || 1 > 0 || 5 == '5' || !false)      -> false
+
+
+nullish coalescing operator (??) 
+null vs undefined 
+
+
+null: absence of data 
+let var1 = null;
+
+undefined: declared but not assigned any value 
+let var2;
+
+
+
+
+JS has a built in Number object which has many useful properties and functions
+properties: information about the object (What it has)
+functions: behaviors of the object (What it does) 
+
+
+Can we call a function without an object? 
+
+isNaN()
+
+Number.toString()
+Number.toFixed()
