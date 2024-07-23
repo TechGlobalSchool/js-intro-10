@@ -1,7 +1,7 @@
 
 
 
-07-22-2024 JS Operators
+07-22-2024 JS Operators & Numbers Intro
 
 RECAP: 
 
