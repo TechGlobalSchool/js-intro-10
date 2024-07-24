@@ -1,0 +1,52 @@
+
+
+
+07-23-2024 JS Numbers
+
+Falsy values:
+false 
+0
+''
+null
+undefined
+NaN
+
+
+-Number Object is more complex than the primitive number.
+-It is built-in object.
+-It has its own properties and functions. 
+
+Properties:
+MAX_VALUE
+MIN_VALUE
+MAX_SAFE_INTEGER
+MIN_SAFE_INTEGER
+POSITIVE_INFINITY
+NEGATIVE_INFINITY
+NaN 
+EPSILON
+
+
+property: the object information (what it has)
+function: the object behaviors (what it does)
+
+
+property = state = field = instance variables
+function = method = behavior
+
+
+Can we call a function without an object? 
+
+isNaN()
+
+Number.toString()
+Number.toFixed()
+
+
+
+JavaScript provides us some global functions you can invoke without referencing from any objects.
+
+isNaN()
+parseFloat()
+parseInt()
+isFinite()

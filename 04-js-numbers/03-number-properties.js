@@ -9,4 +9,3 @@ console.log(Number.NEGATIVE_INFINITY); // -Infinity
 
 console.log(Number.NaN); // NaN
 console.log(Number.EPSILON); // 2.220446049250313e-16
-

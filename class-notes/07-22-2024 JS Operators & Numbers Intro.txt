@@ -136,11 +136,3 @@ let var2;
 JS has a built in Number object which has many useful properties and functions
 properties: information about the object (What it has)
 functions: behaviors of the object (What it does) 
-
-
-Can we call a function without an object? 
-
-isNaN()
-
-Number.toString()
-Number.toFixed()
