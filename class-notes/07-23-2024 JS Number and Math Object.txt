@@ -1,7 +1,7 @@
 
 
 
-07-23-2024 JS Numbers
+07-23-2024 JS Number and Math Object
 
 Falsy values:
 false 
