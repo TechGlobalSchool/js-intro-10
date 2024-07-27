@@ -1,0 +1,29 @@
+
+
+07-27-2024 JS String Methods Part 1
+
+
+STATIC vs NON-STATIC methods
+-static methods are invoked with the Object/Class/Blueprint template
+-non-static methods are invoked with the instance of the Object/Class/Blueprint template
+
+Math.max(5, 3) // static method 
+Number.isInteger(5); // static method
+
+
+let n1 = 25.54653;
+
+n1.toFixed(2); // 25.55
+
+toFixed() is a NON-STATIC function
+
+
+
+'ab'[0]; // 'a'
+'hello'[5]; // undefined 
+
+'good morning'.at(-3); // 'i'
+'hi'.at(-3); // undefined 
+'hi'.charAt(2); // ''
+
+'abc'.charCodeAt(3); // NaN
