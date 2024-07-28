@@ -1,0 +1,60 @@
+
+
+
+07-28-2024 JS String Methods Part 2
+
+
+length property: returns the total numbers of the characters in the string
+
+Concatenation
+1. concat()
+
+Extract characters:
+1. access property with [] 
+2. charAt()
+3. at() 
+4. charCodeAt()
+
+Searching the index
+1. indexOf()
+2. lastIndexOf()
+3. includes()
+4. startsWith()
+5. endsWith()
+
+Changing cases 
+1. toLowerCase()
+2. toUpperCase()
+
+
+' Sign in '.trim() === 'Sign in'
+
+
+
+
+substring() vs slice() 
+
+'Hello'.substring(3, 1); // 'el'
+'Hello'.slice(3, 1); // ''
+
+
+'Morning'.slice(-5, -3); // 'rn'
+'Morning'.substring(-5, -3); // '' 
+
+
+'Computer'.slice(-4); // 'uter'
+'Computer'.substring(-4); // 'Computer'
+
+
+'pencil'.slice(-2, -4); // ''
+
+
+
+'TechGlobal'.replace('Tech', '').toUpperCase().split(''); // [ 'G', 'L', 'O', 'B', 'A', 'L']
+
+let s = 'TechGlobal';
+
+s.slice(s.indexOf('l'), s.lastIndexOf('l')).replace('O', '###').toUpperCase();
+s.slice(5, 9).replace('O', '###').toUpperCase();
+
+'loba'.toUpperCase(); // 'LOBA'
