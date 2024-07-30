@@ -1,0 +1,33 @@
+
+
+
+07-29-2024 JS Functions
+
+function: method or behavior of an object-template-class-prototype 
+
+20 lines of code running a task and you know you will this in many programs.
+
+REUSABLE: one of the biggest advantage of creating functions.
+Breaking down your program into managable pieces.
+We'll meaningful identifiers for functions.
+
+
+CREATING A FUNCTION 
+function funcName(arg1, arg2, arg3) {
+    // this is the block of the code
+}
+
+
+funcName();
+
+
+
+void: these methods does not return any value
+return-type: these methods returns something
+
+
+
+let fullname = 'john doe';
+
+const words = fullname.split(' '); // [ 'john', 'doe' ]
+
