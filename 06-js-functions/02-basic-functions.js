@@ -85,5 +85,15 @@ Math.floor(Math.random() * (max - min + 1)) + min
 */
 
 function getRandomNumber(num1, num2) {
-    
+    let max = Math.max(num1, num2);
+    let min = Math.min(num1, num2);
+
+    return Math.floor(Math.random() * (max - min + 1)) + min; // 
 }
+
+console.log(getRandomNumber(3, 5));
+console.log(getRandomNumber(3, 5));
+console.log(getRandomNumber(3, 5));
+console.log(getRandomNumber(8, 6));
+console.log(getRandomNumber(8, 6));
+console.log(getRandomNumber(8, 6));
