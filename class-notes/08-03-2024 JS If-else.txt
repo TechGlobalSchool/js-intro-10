@@ -1,0 +1,77 @@
+
+
+if else in programming languages are known as control flow statements or conditional statements
+
+
+let str = 'John';
+
+
+if(str.startsWith('A')) {
+    // if block
+} 
+else {
+    // else block
+}
+
+
+if(condition) {
+    // if block
+}
+else if(condition) {
+    // block 
+}
+else {
+    // block
+}
+
+
+if(weekend) {
+    if(school) {
+        // go to school 
+    }
+    else {
+        // leisure
+    }
+}
+else {
+    if(holiday) {
+        // leisure
+    }
+    else {
+        // work
+    }
+}
+
+
+RULES:
+-else block or else if blocks cannot be used without if blocks
+-it should always start with if block 
+-else block is optional 
+
+
+console.log('Hello');
+
+if(2 === 2) {
+    console.log('XYZ');
+}
+
+console.log('abc');
+
+OUTPUT:
+Hello
+XYZ
+abc
+
+
+
+
+let name = 'John'
+
+name[0]
+name[name.length - 1] or name.at(-1)
+
+
+let num = ___;
+
+num % 2 === 0; // if true: EVEN, else: ODD 
+num % 2 !== 0; // if true: ODD, else: EVEN
