@@ -1,0 +1,104 @@
+
+
+
+08-04-2024 JS If-else Part 2
+
+RECAP:
+
+-Control flow - conditional statements used to run different block of codes based on conditions 
+-It checks a condition which always returns true or false to decide the block to be executed 
+-There will be only one block execution unless there is nested if else statements 
+
+
+SYNTAX:
+if(condition) {
+    // ..your code here
+}
+else {
+    // ..your code here
+}
+
+
+TERNARY: is a common approach used for simple if-else statements 
+condition ? expression1 : expression2; 
+
+if condition true, expression1 will be executed
+if condition false, expression2 will be executed
+
+
+LADDER IF-ELSE IF Statements 
+let num = -1;
+
+if(num > 0) {
+    console.log('POSITIVE');
+}
+else if(num < 0) {
+    console.log('NEGATIVE');
+}
+else {
+    console.log('NEUTRAL');
+}
+
+
+NESTED IF-ELSE Statements 
+if(num > 0) {
+    console.log('POSITIVE');
+}
+else {
+    if(num < 0) {
+        console.log('NEGATIVE');
+    }
+    else {
+        console.log('NEUTRAL');
+    }
+}
+
+if(num !== 0) {
+    if(num > 0) {
+        console.log('POSITIVE');
+    }
+    else {
+        console.log('NEGATIVE');
+    }
+}
+else {
+    console.log('NEUTRAL');
+}
+
+
+
+REDUNDANT CODE: unnecessary code and does not have any affect on the program
+
+if(condition) {
+    console.log('A');
+    console.log('B');
+    console.log('C');
+}
+else {
+    console.log('D');
+    console.log('E');
+    console.log('C');
+}
+
+
+THIS DOES NOT WORK
+r2 === 1 || 2 || 3
+r2 === (1, 2, 3)
+
+
+USE BELOW INSTEAD 
+r2 === 1 || r2 === 2 || r2 === 3
+
+
+
+let num = ___;
+
+num >= 0 && num <= 10; // 0 1 2 3 4 5 6 7 8 9 10
+num >= 0 || num <= 10;
+
+0 1 2 ------- Infinity 
+10 9 --- 0 -1 -2 -3 -Infinity
+
+if(false); {
+    console.log('Hello World');
+}
