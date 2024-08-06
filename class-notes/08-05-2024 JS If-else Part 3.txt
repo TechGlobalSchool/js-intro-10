@@ -1,0 +1,93 @@
+
+
+
+08-05-2024 JS If-else Part 3
+
+
+RECAP:
+
+if-else: control flow or conditional statements
+it works with a condition and off of the condition, there will be different blocks of codes to be executed 
+
+if(condition) {
+    // block 
+}
+else {
+    // block
+}
+
+condition ? expression1 : expression2;
+
+let price = 0;
+let color = 'White';
+
+if(color !== 'White') {
+    price += 50;
+}
+
+
+let day = 'Monday';
+
+if(day === 'Monday') {
+    console.log('Go to work);
+}
+else if(day === 'Sunday') {
+    console.log('Go to concert);
+}
+
+
+// Finding if a number is EVEN or ODD without a function
+
+let num = Math.floor(Math.random() * 10); // 2
+
+if(num % 2 === 0) {
+    console.log('EVEN');
+}
+else {
+    console.log('ODD');
+}
+
+
+OUTPUT: 
+EVEN 
+
+
+// Finding if a number is EVEN or ODD with a function
+
+function evenOdd(num) {
+    if(num % 2 === 0) {
+        return 'EVEN';
+    }
+
+    return 'ODD';
+}
+
+console.log(evenOdd(2));
+console.log(evenOdd(5));
+console.log(evenOdd(7));
+
+
+OUTPUT:
+EVEN
+ODD
+
+
+
+function doSmth() {
+    if(true) {
+        return 1;
+        console.log('Hello World'); // Unreachable code
+    }
+    else if () {
+        return 2;
+    }
+
+    console.log(3);
+
+    return 5;
+    return 6; // Unreachable code
+    return 7; // Unreachable code
+}
+
+
+OUTPUT:

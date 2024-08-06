@@ -100,3 +100,23 @@ getGrade(83) -> 'B'
 getGrade(23) -> 'F' 
 getGrade(67) -> 'D'
 */ 
+
+// number can be 0 - 100
+function getGrade(number) {
+    if (number >= 90) return 'A'
+    else if (number >= 80) return 'B'
+    else if (number >= 70) return 'C'
+    else if (number >= 60) return 'D'
+    
+    return 'F';
+}
+
+
+function getGrade(score) {
+    if (score >= 90) return 'A';
+    else if (score >= 80) return 'B';
+    else if (score >= 70) return 'C';
+    else if (score >= 60) return 'D';
+
+    return 'F';
+}
