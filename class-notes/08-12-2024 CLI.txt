@@ -1,0 +1,100 @@
+
+
+
+CLI: Command Line Interface
+GUI: Graphical User Interface
+
+MAC: Terminal
+Windows: cmd or command prompt
+
+Finder: Mac 
+File Explorer: Windows
+
+cmd + shift + h -> this keys navigates you to Home Directory on Finder
+cmd + shift + . -> show/hide hidden folders/files
+
+
+PATH: an address of a file or folder 
+
+folder = directory
+
+HOME Directory:
+MAC: /Users/{user}
+Windows: C:\Users\{user}
+
+ROOT Directory
+MAC: /
+Windows: C:\
+
+
+SOME MOST USED LINUX/CLI COMMANDS
+1. Show me active directory I am on now
+pwd: print working directory (for mac)
+cd: change directory (for windows)
+
+
+2. Create a new folder
+mkdir folderName (for both mac and windows)
+mkdir = make directory
+
+3. Change directory to a child folder
+cd directoryName (for both mac and windows)
+cd = change directory
+
+4. Change directory to parent (one step back)
+cd .. (for both mac and windows)
+
+
+5. Change directory to Home 
+cd ~ (for mac)
+cd %HOMEPATH% (for windows)
+cd %userprofile% (for windows)
+
+
+6. Change directory to Root
+cd / (for both mac and windows)
+
+
+7. List existing files and folders in the current directory
+ls (for mac): shows only not hidden folders and files
+ls -a (for mac): shows all folders and files including hidden ones
+dir (for windows)
+
+
+8. Clear terminal or cmd
+clear (for mac)
+cls (for windows)
+
+
+9. Create a new folder 
+mkdir folderName (for both mac and windows users) 
+
+
+10. Remove an existing folder 
+Empty:
+    rmdir folderName (for both mac and windows)
+    rd folderName (for windows) 
+
+Non-empty:
+    rm -rf folderName (for mac)
+    rmdir /s folderName (for windows) -> asks once again if you are sure 
+    rmdir /s /q folderName (for windows) -> remove quietly
+
+
+11. Create a new file 
+Empty:
+    touch fileName (for mac)
+    echo. > fileName
+
+Non-empty with initial content:
+    echo "Hello" > myNotes.txt
+
+12. Delete an existing file 
+    rm fileName (for mac)
+    del fileName (for windows)
+
+
+
+Node.js command
+
+node jsFileName.js (for both mac and windows)
