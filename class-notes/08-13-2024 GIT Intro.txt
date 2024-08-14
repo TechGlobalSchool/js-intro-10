@@ -2,3 +2,14 @@
 
 
 08-13-2024 GIT Intro
+
+GIT: Global Information Tracker
+  -it allows programmer to work together on a project collaboratively
+  -it stores our project using a hosting platform with all its versions 
+
+
+Hosting platforms: GitHub, GitLab, Bitbucket, Azure DevOps and many more.
+GitHub: by individuals to create public projects and market themselves
+
+
+VCS: Version Control System
