@@ -13,3 +13,48 @@ GitHub: by individuals to create public projects and market themselves
 
 
 VCS: Version Control System
+
+
+SSH KEY
+It is used for authentication
+
+
+HOW TO LINK AND PUSH A NEW PROJECT 
+1. Create a local repo (on your machine)
+2. Create a remote repo (on GitHub. GitLab, Bitbucket)
+3. Initialize the local repo with GIT 
+  git init 
+4. Link local repo with remote using SSH commands
+  git remote add origin <URL>
+5. Make some changes 
+6. Check the status 
+  git status 
+7. Track the changes - Stage them 
+  git add fileName 
+  git add .
+8. Commit the changes with a meaningful message 
+9. Push the changes to remote repo 
+  git push --set-upstream origin master
+  git push -u origin master 
+  git push
+
+
+GIT COMMANDS 
+  git init
+  git remote add origin <URL>
+  git add .
+  git commit -m "message"
+  git push 
+  git push -u origin master
+  git push --set-upstream origin master
+LINUX COMMANDS 
+  cd 
+  ls 
+  mkdir
+NODE COMMANDS 
+  node -v 
+  node fileName.js
+NPM (Node Package Manager) COMMANDS 
+  npm init 
+NPX (Node Package Executor) COMMANDS
+  npx cypress open
