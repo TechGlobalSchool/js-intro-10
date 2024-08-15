@@ -1,0 +1,72 @@
+
+
+
+08-14-2024 GIT Repos
+
+RECAP:
+
+GIT: Global Information Tracker 
+  We use git to push our codes to remote repos and collaborate with other team members or developers/QAs/programmer 
+
+GIT is a VCS (Version Control System)
+GIT is a distributed version control system 
+
+Centralized VCS: We do not prefer this as if server is down or there is not network, we can't push our changes 
+Distributed VCS: We have a local copy of the server repo and can keep working even though there is issues with server or network
+
+GitHub / GitLab / Bitbucket / Azure DevOps: All hosting tools/apps where we can store our remote repos
+
+SSH: Special type of authentication used instead of username and password
+It is more secure and used private-public key pairs
+Public is shared with hosting apps while private is in your local 
+Private keys is in your local
+
+ssh-keygen: simpliest ssh set up 
+
+
+HOW TO LINK AND PUSH A NEW PROJECT FROM YOUR LOCAL TO REMOTE
+1. Create a local repo (on your machine)
+2. Create a remote repo (on GitHub. GitLab, Bitbucket)
+3. Initialize the local repo with GIT 
+  git init 
+4. Link local repo with remote using SSH commands
+  git remote add origin <URL>
+5. Make some changes 
+6. Check the status 
+  git status 
+7. Track the changes - Stage them 
+  git add fileName 
+  git add .
+8. Commit the changes with a meaningful message 
+9. Push the changes to remote repo 
+  git push --set-upstream origin master
+  git push -u origin master 
+  git push
+
+
+HOW TO CLONE AN EXISTING REMOTE REPO TO YOUR LOCAL
+1. Create a new remote repository
+2. Clone it to your local (BUT make sure you are on the correct path)
+3. Make some changes 
+4. Check the status 
+  git status 
+5. Track the changes - Stage them 
+  git add fileName 
+  git add .
+6. Commit the changes with a meaningful message 
+7. Push the changes to remote repo 
+  git push --set-upstream origin master
+  git push -u origin master 
+  git push
+
+
+GIT BRANCHING
+Allows developing different code on the same base.
+Makes it easy to work together and collaborate with team members.
+
+git branch 			-> list the existing branches.
+git branch <branch-name>		-> create a new branch with the specified name.
+git checkout <branch-name> 		-> switch to the specified branch
+git checkout -b <branch-name> 	-> create and switch to the created branch.
+git branch –d <branch-name> 		-> delete the specified branch.
+
