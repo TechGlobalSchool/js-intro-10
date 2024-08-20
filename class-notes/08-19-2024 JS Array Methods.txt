@@ -1,0 +1,112 @@
+
+
+
+08-19-2024 JS Array Methods
+
+
+Array: built-in JS object used to store multiple data.
+
+Arrays Methods:
+
+Checking if a variable is an array:
+  isArray()   -> checks is a variable is an array and returns boolean
+
+Retrieving array elements:
+ []           -> retrieves array element at given index
+ at()         -> retrieves array element at given index. Also, works with negative indexes checking backward
+
+
+Adding and removing array elements:
+  push()      -> adds elements to the end of the array
+  pop()       -> removes the last element
+  shift()     -> removes the first element
+  unshift()   -> adds elements to the beginning 
+  splice()    -> adds/removes/updates elements in an array
+
+
+Searching some elements in an array:
+  includes()  -> checks if the array has the specified element and returns boolean
+  indexOf()   -> checks if the array has the specified element and returns first index of the match
+  lastIndexOf()   -> checks if the array has the specified element and returns last index of the match
+
+
+Reversing arrays:
+  reverse()   -> reverses the array backward
+
+
+Getting a partial array:
+  slice()     -> extracts the partial array with the specified indexes
+
+
+Merging arrays:
+  concat()    -> merges/combines two or more arrays together
+
+  spread operator (...)
+
+
+sort() Methods
+TASK: sorts the array elements alphabetically (lexicographically)
+RETURN: returns the same array modified (sorted)
+ARGUMENTS: No args when sorting strings but we can take a callback function as an argument for numbers
+CHANGE ORIGINAL VALUE: YES
+STATIC or NON-STATIC: NON-STATIC
+
+
+[ 1, 40, 2, 3, 10, 4, 100 ]
+
+
+a       b         a - b       memory
+1       40        1 - 40      1 should be less than 40
+40      2         40 - 2      40 should be more than 2 
+
+
+
+arr.sort((a, b) => a - b); // ascending 
+arr.sort((a, b) => b - a); // descending 
+
+
+Ascending order: smallest to biggest 
+Descending order: biggest to smallest 
+
+
+Callback function: it is a function passed as an argument to another function -> (a, b) => a - b
+Higher order function: it is a function that takes another function as an argument -> sort()
+
+
+function func1(func) {
+
+}
+
+function func2() {
+  
+}
+
+
+func1(func2); // func1 is higher order function while func2 is callback function
+
+
+
+flat() method
+TASK: flattens the sub arrays in the outer arrays
+RETURN: returns a new array
+ARGUMENTS: No arguments but you may pass depth argument to extracts nested arrays
+CHANGE ORIGINAL VALUE: NO
+STATIC or NON-STATIC: NON-STATIC
+
+
+toString() method 
+TASK: converts array to a string with coma (,) separator
+RETURN: returns a string
+ARGUMENTS: No args 
+CHANGE ORIGINAL VALUE: NO
+STATIC or NON-STATIC: NON-STATIC
+
+
+
+join() method
+TASK: converts array to a string
+RETURN: returns a string
+ARGUMENTS: When there is no arg, it separates with coma (,) like toString() method
+  It can take a custom string separator as an argument
+CHANGE ORIGINAL VALUE: NO
+STATIC or NON-STATIC: NON-STATIC

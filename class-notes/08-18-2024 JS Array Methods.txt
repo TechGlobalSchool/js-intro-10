@@ -134,31 +134,3 @@ STATIC or NON-STATIC: NON-STATIC
 
 
 const variables cannot be reassigned! but their value especially in case of reference types can be changed.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-TASK:
-RETURN:
-ARGUMENTS:
-CHANGE ORIGINAL VALUE:
-STATIC or NON-STATIC:
