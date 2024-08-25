@@ -1,0 +1,122 @@
+
+
+
+08-24-2024 JS Loops
+
+Loops: they are used to run a block of code many times. 
+
+for(let i = 1; i < 10; i++) {
+  // block of code
+  console.log(i)
+}
+
+
+1. FOR LOOP:
+initialization 
+condition 
+update - change
+
+
+INFINITE LOOP: a loops never terminates
+for(let i = 10; i > 1; i++) {
+  console.log(i);
+}
+
+for( ; ; ) {
+  console.log('Hello');
+}
+
+
+
+2. WHILE LOOP 
+
+while(condition) {
+  // block of code to execute
+}
+
+
+
+1     6
+4     2
+9     8
+
+
+let written = 1; 
+let guess = undefined; 
+
+
+while(guess !== written) {
+  guess = getRandomNumber(1, 10); // 4, 7, 1
+}
+
+console.log('Numbers finally matched!');
+
+
+
+let written = 1; 
+let guess = undefined; 
+
+for( ; ; ) {
+  guess = getRandomNumber(1, 10);
+  attempts++;
+  if(guess === written) break;
+}
+
+for loop - i 
+
+
+
+// Solving some questions like count, sum, product, etc.
+
+1. First, declare your variables on the top to store final results and assign them some default values
+count = 0, sum = 0, product = 1, factorial = 1, arr = [], obj = {}, num = undefined, bool1 = false
+
+2. Create your loop to compose your results
+3. Return or log your final results once the loop is completed
+
+
+
+for loop    -> 50-60 percent of the time (fixed iteration)
+for...of loop -> 30-40 percent of the time (arrays)
+while loop -> 5-10 percent of the time (condition)
+do...while and for...in loop -> 1-2 percent of the time
+
+
+for loop        vs          while loop 
+Do I know how many times this loop exactly run?
+
+      YES                     NO
+    for loop              while loop
+
+
+3. DO WHILE LOOP 
+
+
+let i = 5; 
+
+while (i < 10) {
+  console.log(i);
+  i++;
+}
+
+OUTPUT:
+5
+6
+7
+8
+9
+
+i = 5;
+
+do {
+  console.log(i);
+  i++;
+}
+while(i < 10);
+
+OUTPUT:
+5
+6
+7
+8
+9
