@@ -1,0 +1,48 @@
+
+
+
+08-25-2024 JS Loops
+
+
+1. for loop 
+
+for(initialization; condition; update) {
+  // block
+}
+
+
+2. while loop 
+
+while(condition) {
+  // block
+}
+
+
+3. do...while loop
+
+do {
+  // block
+} while(condition);
+
+CONTROL STATEMENTS 
+break: used to terminate the loop 
+continue: used to skip the current iteration
+
+NESTED LOOPS 
+Any loop used in another loop creates a nested loop. 
+In this case, for every iteration of outer loop, a full cycle of inner loop will be executed
+
+4. for...of loop 
+Mostly used with iterable objects like arrays.
+
+
+CHECKING A NAME STARTING WITH A LETTER IGNORING CASES
+name[0] === 'J' || name[0] === 'j' 
+name[0].toLowerCase() === 'j'
+name[0].toUpperCase() === 'J'
+name.toLowerCase()[0] === 'j'
+name.toUpperCase()[0] === 'J'
+name.startsWith('j') || name.startsWith('J')
+name.toLowerCase().startsWith('j')
+name.toUpperCase().startsWith('J')
+'jJ'.includes(name[0])
