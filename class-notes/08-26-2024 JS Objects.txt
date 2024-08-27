@@ -1,0 +1,42 @@
+
+
+
+08-26-2024 JS Objects
+
+Object: a collection properties
+property: key + value 
+
+let name = 'John';
+let age = 25;
+let city = 'Chicago';
+
+
+const person = {
+  name: 'John',
+  age: 25,
+  city: 'Chicago',
+  isAlive: true,
+  favMovies: [ 'Matrix', 'Amelia', 'Titanic' ],
+  kids: [
+    {
+      name: 'Alex',
+      age: 3
+    },
+    {
+      name: 'Jennifer',
+      age: 5
+    }
+  ]
+}
+
+
+
+DEFAULT:
+empty string, array, object 
+''
+[]
+{}
+
+
+number: 0
+boolean: false
