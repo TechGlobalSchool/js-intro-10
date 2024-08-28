@@ -24,6 +24,12 @@ const person = {
     numberOfKids: 7
 };
 
+// const SSN = person.SSN;
+// const jobTitle = person.jobTitle;
+// const numberOfKids = person.numberOfKids;
+
+const { SSN, jobTitle, numberOfKids } = person;
+
 
 // Getting properties using either dot notation or bracket notation
 console.log(person.favNumber); // 7

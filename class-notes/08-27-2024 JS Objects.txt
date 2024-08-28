@@ -1,0 +1,102 @@
+
+
+
+08-27-2024 JS Objects
+
+
+RECAP:
+Object: it is a reference data type and stores data in key-value pairs
+Object properties are not index based.
+Object properties can be accessed, updated, deleted using the keys.
+
+*** keys are by default string and UNIQUE!!!
+*** values can be of any type and duplicates.
+
+
+const obj1 = {};
+const obj2 = new Object();
+
+// adding a property
+obj2.name = 'smth';
+
+// updating a property 
+obj2.name = 'smth different';
+
+// delete a property 
+delete obj2.name;
+
+
+const phone = {
+    brand: 'Samsung',
+    price: 10.99,
+    delivery: ['shipping', 'pick-up'],
+    quantity: 96,
+    reviews: 4.6
+};
+
+for(const key in phone) {
+  console.log(key);
+  console.log(phone[key]);
+}
+
+
+Built-in Object static method
+Object.keys() -> it takes an object variable as an argument and returns all the keys as an array 
+Object.values() -> it takes an object variable as an argument and returns all the values as an array 
+Object.entrie() -> it takes an object variable as an argument and returns all the key-value pairs as a nested array 
+
+for(const key of Object.keys(phone)) {
+  console.log(key);
+}
+
+OUTPUT:
+brand
+price
+delivery
+quantity 
+reviews
+
+for(const value of Object.values(phone)) {
+  console.log(value);
+}
+
+OUTPUT:
+Samsung 
+10.99
+['shipping', 'pick-up']
+96
+4.6
+
+for(const entry of Object.entries(phone)) {
+  console.log(entry);
+}
+
+OUTPUT:
+[ 'brand', 'Samsung' ]
+[ 'price', 10.99 ]
+.
+.
+.
+
+
+for(const [key, value] of Object.entries(phone)) {
+  console.log(key, value);
+}
+
+OUTPUT:
+brand Samsung
+price 10.99
+.
+.
+.
+
+
+const person = {
+  fname: 'John',
+  lname: 'Doe',
+  fullname: function () {
+    return `${this.fname} ${this.lname}`;
+  }
+};
+
+console.log(person.fullname()); // 'John Doe'
