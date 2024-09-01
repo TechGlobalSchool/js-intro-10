@@ -1,0 +1,26 @@
+
+
+
+09-01-2024 - JS Arrays Higher Order Functions
+
+
+if(curr % 2 === 0) return acc + 1;
+return acc;
+
+return curr % 2 === 0 ? acc + 1 : acc;
+
+
+
+call, apply, bind methods are used to borrow another function and execute it for an object by
+defining this keyword. 
+
+call: takes individual arguments and executes the borrowed function 
+apply: takes an array of arguements and executes the borrowed function
+bind: takes individual arguments and returns a new function to be invoked
+
+
+
+
+
+
+
