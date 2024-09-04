@@ -1,0 +1,81 @@
+
+
+
+09-03-2024 JS Immutability & JSON
+
+Mutable: changing
+Immutable: not changing 
+
+Array and object are mutable data types, and some of their methods can change their values
+
+const arr = [ 1, 2, 3 ];
+
+arr.push(4); // [ 1, 2, 3, 4 ]
+
+
+const person = {
+  fname: 'John',
+  lname: 'Doe'
+};
+
+person.age = 25; // { fname: 'John', lname: 'Doe', age: 25 }
+
+
+const numbers = [ 10, 20, 30 ];
+
+mutable array methods: reverse(), push(), pop(), shift(), unshift(), splice(), sort()
+
+immutable array methods: indexOf(), lastIndexOf(), includes(), isArray(), slice(), concat(), 
+map(), filter(), reduce(), forEach(), find(), findLast(), findIndex(), findLastIndex(), some(), every(),
+at(), flat(), toString(), join()
+
+
+PRIMITIVES:
+string, number, boolean, null, undefined, bigint, symbol 
+
+NOTE: All the primitives are immutable by their nature.
+
+let name = 'John';
+
+name = 'James';
+
+console.log(name); // 'James'
+
+
+
+JSON – JavaScript Object Notation
+
+{
+    "DOB": "2000-10-10",
+    "EMAIL": "john@abc.com",
+    "FIRST_NAME": "John",
+    "LAST_NAME": "Doe",
+    "INSTRUCTOR_ID": 1
+}
+
+
+DATA TYPES SUPPORTED BY JSON
+Strings: "Hello, World!"
+Numbers: 42 or 3.14
+Booleans: true or false
+Arrays: ["apple", "banana", "orange"]
+Objects: {"key": "value", "age": 25}
+Null: null
+
+
+Not supported: undefined, symbol, functions, reference types except the arrays and objects
+
+Serialization is the process of converting a JavaScript object into a JSON string using JSON.stringify(). 
+This is useful when sending local object as text to database or server.
+
+Deserialization is the process of converting a JSON string into a JavaScript object using JSON.parse(). 
+This allows us to use JSON data in our JavaScript code.
+
+NOTE: JSON shares a similar syntax with JavaScript object literals, 
+making it easy to convert between JSON and JavaScript objects.
+
+
+
+What is mutability?
+What is JSON and its operations?
+Explain what are the differences between deep and shallow copy?
