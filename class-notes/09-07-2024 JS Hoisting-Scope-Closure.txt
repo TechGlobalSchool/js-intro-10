@@ -1,0 +1,30 @@
+
+
+
+09-07-2024 JS Hoisting-Scope-Closure
+
+
+Hoisting: using functions and variables before they're declared
+
+-Function declarations will be hoisted 
+-Arrow functions and function expression are not hoisted, you cannot use this before their initialization
+
+-var keyword is hoisted 
+-let and const are not hoisted
+-var-let-const respect the global and function scope 
+-let and const also respect the block scope while var does not support block scope 
+
+
+
+for() {
+  let number = 10; 
+  
+  for() {
+    let name = 'John';
+  }
+
+  console.log(name);
+}
+
+
+
