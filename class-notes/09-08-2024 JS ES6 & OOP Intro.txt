@@ -1,0 +1,91 @@
+
+
+
+09-08-2024 JS ES6 & OOP Intro
+
+Template Literals - Backticks `` 
+let-const keys for variables 
+arrow functions
+includes(), startsWith(), endsWith() string methods
+for...of loop
+Spread operator
+
+
+let vs const 
+
+similarities
+  - ES6 features 
+  - they are used to declare variables
+  - they can't be hoisted. var is hoisted (declaration moved to the top)
+  - they both respect function and block scope. var does not respect block scope.
+
+differences
+  - let allows variables to be reassigned but const does not.
+  - const usually used with reference types while let is used with primitives (not all the time)
+  - let can be declared without initialization but const MUST be initialized. 
+  - const is used for constants that you will never reassign after their initialization.
+
+
+const variableName; // Error
+const variableName = 5; // MUST be initialized 
+
+let variableName; // undefined
+
+
+
+***INTERVIEW QUESTION***
+Compiler time errors: these are the errors you see before running the program.
+Runtime errors: these are the errors you see after running the program.
+
+
+ITERABLE OBJECTS: objects, arrays, maps, sets 
+
+
+***INTERVIEW QUESTION***
+spread operator: spreads the array elements or object properties into their individual elements or properties 
+rest parameters: is going to collect given arguments in an array
+
+
+
+OOP - Object Oriented Programming 
+
+OOP Languages: C#, C++, Java 
+
+JavaScript is proto-type based programming language.
+ES6 also implemented OOP with classes added.
+
+Object-oriented programming means putting real-life objects into programming. 
+It allows us break down complex objects into smaller pieces in softwares. 
+
+
+const mouse = {
+  brand: 'Logi',
+  price: 29.99,
+  reviews: 4.4,
+  colors: [ 'Black', 'Blue', 'White', 'Pink' ]
+};
+
+
+const car = {
+  make: 'Mercedes',
+  model: 'GLC300',
+  year: 2024,
+  price: 50000,
+  color: ['Black', 'White']
+};
+
+
+Chase - Banking apps 
+const customer = {
+  fname,
+  lname,
+  accountNumber,
+
+};
+
+
+CONSTRUCTOR: used to create / instantiate an object using new keyword from its template/blueprint/prototype.
+
+const date = new Date();
+const arr = new Array();
+const obj = new Object();
