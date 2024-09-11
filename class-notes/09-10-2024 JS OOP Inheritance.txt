@@ -1,0 +1,69 @@
+
+
+
+09-10-2024 JS OOP Inheritance
+
+JS Prototypes or Classes are used to improve the reusability of the objects
+
+Prototype or class = template from which you can create many objects 
+Objects or instances are created from prototypes or classes using constructor together 
+with new keyword
+
+
+Inheritance: it is building a parent-child relationship between 2 classes or prototypes. 
+In this case, child class or prototype will be able to use all (not private) parent members (functions
+properties, constructor).
+
+How do we achieve Inheritance? 
+we use extends keyword 
+
+What is method overriding?
+When child class inheriting parent class but changes the method body.
+
+What is method overloading?
+When you are able to use the same method with different arguments
+
+Math.max(2, 3);
+Math.max('2', '3');
+Math.max(2, 3, 4);
+
+Method overriding vs method overloading?
+overriding happens in the case of inheritance and when child class re-implements a new body for a parent class method
+overloading is just using same method name with different arguments
+
+Syntax:
+
+class Person {
+  eat() {
+
+  }
+
+  sleep() {
+
+  }
+}
+
+class Programmer extends Person {
+  // method overriding
+  eat() {
+    // different body
+  }
+
+  code() {
+
+  }
+}
+
+-one parent can have multiple child that extends from it 
+-one child can extend to ONE parent only.
+
+
+What is super()?
+super() is used to inherit parent constructor into child constructor
+
+
+
+
+
+
+
