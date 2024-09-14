@@ -1,0 +1,211 @@
+
+
+
+09-14-2024 JS Static & Async Intro
+
+RECAP:
+
+OOP: Object-Oriented Programming 
+OOP Languages: C++, C#, Java 
+Prototype-based Languages: JavaScript, Python
+
+
+JS started to implement OOP concepts with ES6 by adding classes. 
+
+OOP Concepts/Principles 
+Encapsulation: making class properties/fields/instance variables/states private and providing public getters and setters 
+Inheritance: this concept is used to build parent-child relationship between classes to increase reusability. Child can use parent properties/constructor/methods 
+Abstraction: it is providing abstract methods (which has no body) and child class must provide the body.
+Polymorphism: One object being able to get into many shapes.
+
+
+class Book {
+  constructor(title, page) {
+    this.title = title;
+    this.page = page;
+  }
+
+  getTitle() {
+    return this.title;
+  }
+
+  setTitle(newTitle) {
+    this.title = newTitle;
+  }
+}
+
+const book1 = new Book('Amok', 60); 
+
+// direct access
+book1.title;
+book1.page;
+
+book1.title = 'Hello';
+
+// Encapsulation
+book1.getTitle()
+book1.setTitle('Hello');
+
+
+Not JS, 
+// ABSTRACTION: parent abstract class has abstract methods with no bodies and child classes must provide bodies to these methods
+abstract class Fruit {
+  abstract taste(); // no body/implementation
+}
+
+
+class Apple extends Fruit {
+  taste() {
+    // provide body
+  }
+}
+
+
+Polymorphism: 
+const apple1 = new Apple();
+
+apple1 is an Apple object
+apple1 is a Fruit object 
+
+
+
+
+
+
+
+Prototype: Prototypes are the mechanism by which JavaScript objects inherit features from one another.
+
+ES6 Classes: ES6 classes are blueprints from where many objects can be instantiated.
+
+Inheritance: Being able to inherit and reuse parent prototype or class methods-constructors-properties.
+1. Prototypal inheritance (__proto__)
+2. ES6 class inheritance (extends)
+3. Object.create() method
+
+static properties and methods cannot be accessed with object variables
+non-static properties and methods cannot be accessed with the class name
+
+
+Synchronous vs Asynchronous 
+
+// Synchronous code
+console.log('1');
+console.log('2');
+console.log('3');
+
+setTimeOut(callback, miliseconds); // This is built-in function used to delay execution of inner callback
+
+setTimeOut(() => {
+  console.log('Hello');
+}, 10000);
+
+// Hello will be logged to console after 10 seconds
+
+
+TEST CASE 
+Navigate to https://techglobal-training.com/frontend/project-2
+Enter the username as “TechGlobal”
+Enter the password as “Test1234”
+Click on the “LOGIN” button
+Validate the success message is displayed as “You are logged in”
+
+cy.visit('www.techglobal-training.com'); // takes a second
+cy.get(usernameInput).type('TechGlobal'); // I don't see any usernameInput
+cy.get(passwordInput).type('Test1234');
+cy.get(loginBtn).click();
+cy.get(message).should().have.text('You are logged in');
+
+
+setTimeout(() => {
+  console.log('VISIT URL');
+}, 1000);
+
+setTimeout(() => {
+  console.log('ENTER USERNAME');
+  console.log('ENTER PASSWORD');
+  console.log('CLICK LOGIN');
+}, 500);
+
+setTimeout(() => {
+  console.log('VALIDATE');
+}, 250);
+
+
+3 WAYS TO RESOLVE Asynchronous CODE 
+1. Callbacks (Before ES6)
+2. Promises (After ES6)
+3. Async-Await (After ES6 and little bit more improved version of promises)
+
+
+PROMISE: 
+fullfilled
+rejected 
+pending
+
+visit(url): promising to visit the given url
+login(username, password): promising login functionality
+validate(text): promising to show the expected text
+
+
+
+wakeUp() -> 5 minutes
+makeCoffee() -> 10 minutes
+drinkCoffee() -> 10 minutes 
+shower() -> 15 minutes
+clothing() -> 5 minutes 
+driveToWork() -> 40 minutes
+85 minutes
+
+Asynchronous
+function runDailyRoutine() {
+  wakeUp()
+  makeCoffee()
+  drinkCoffee()
+  shower()
+  clothing()
+  driveToWork()
+}
+
+Takes 40 minutes
+Wake up 
+Clothing 
+Make Coffee 
+Drink Coffee 
+Shower 
+Drive to work
+
+Synchronous with promises 
+function runDailyRoutine() {
+  wakeUp()
+  .then(() => makeCoffee())
+  .then(() => drinkCoffee())
+  .then(() => shower())
+  .then(() => clothing())
+  .then(() => driveToWork())
+}
+
+
+Synchronous with async-await 
+async function runDailyRoutine() {
+  await wakeUp()
+  await makeCoffee()
+  await drinkCoffee()
+  await shower()
+  await clothing()
+  await driveToWork()
+}
+
+
+function getAValidAge() {
+  return new Promise((resolve, reject) => {
+    let age = getRandomNumber(1, 100);
+    if(age >= 16) resolve();
+    else reject(); 
+  });
+}
+
+ERROR HANDLING
+
+getAValidAge()
+  .then(() => console.log('We get a valid age'))
+  .catch(() => console.log('Age is not valid'))
