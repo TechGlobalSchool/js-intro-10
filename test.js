@@ -49,3 +49,6 @@ console.log(isEmailValid("a@outlook.com")); // false
 console.log(isEmailValid("johndoe@a.com")); // false
 console.log(isEmailValid("johndoe@@gmail.com")); // false
 console.log(isEmailValid("johndoe@gmail.com")); // true
+
+
+console.log(Math.round(Math.random())); // 0.82936759384759384

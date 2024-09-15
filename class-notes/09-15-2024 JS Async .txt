@@ -1,0 +1,57 @@
+
+
+
+09-15-2024 JS Async
+
+Synchronous vs Asynchronous
+
+-JS is asynchronous in its nature.
+-Synchronous: the code reads in order top to bottom with no issues.
+-Asynchronous: tasks are executed simultaneously (at the same time or concurrently)
+
+connectToDB(); // 3 seconds 
+fetchData(); // 2 seconds 
+useData(); // 0.5 seconds
+
+3 ways to resolve asynchronous nature of the codes - tasks 
+1. callbacks 
+2. promises 
+3. async-await (syntatical syntax on top of promises)
+
+
+PROMISES:
+-ES6 feature 
+-Promise stages: pending, fullfilled, rejected 
+-then() and catch()
+
+
+
+TEST CASE:
+Go to https://www.amazon.com/   1 second
+Select a product 2 seconds
+Add to cart .5 second
+Checkout 1 second
+
+
+Cypress handles asynchronous code naturally
+function test1() {
+  Program.gotoAmazon();
+  Program.selectProduct();
+  Program.addToCart();
+  Program.checkout();
+}
+
+Playwright
+async function test1() {
+  try{
+    await Program.gotoAmazon();
+    await Program.selectProduct();
+    await Program.addToCart();
+    await Program.checkout();
+  }
+  catch(err) {
+    // 
+  }
+}
+
+
