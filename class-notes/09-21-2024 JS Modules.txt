@@ -1,0 +1,120 @@
+
+
+
+09-21-2024 JS Modules
+
+1. CommonJS Modules 
+module.exports and require()
+Supported by Node.js for server side applications.
+
+2. ES6 Modules 
+export and import: supported by all the browsers
+
+
+HOW TO RUN JS CODE?
+-NodeJS
+-Browser
+-Extensions (you'll never use this in the work environment)
+
+
+static methods and properties can be accessed with the className 
+while non-static can be accessed with an object the class
+
+
+class Apple {
+  static propertyA = 'Hi';
+  propertyB = 'Hello';
+
+  static funcA() {
+    console.log('I am static');
+  }
+
+  funcB() {
+    console.log('I am NOT static');
+  }
+}
+
+// Accessing static properties and methods 
+Apple.propertyA; // 'Hi'
+Apple.funcA(); // I am static
+
+const a1 = new Apple();
+
+a1.funcB(); // I am NOT static
+a1.propertyB; // Hello
+
+
+
+Is the method executes the same task for every single object
+of the class, it makes sense use static method. 
+
+
+class Batch10Student {
+  constructor(fullname, age) P{
+    this.fullname = fullname;
+    this.age = age;
+  }
+
+  static getProgramName() {
+    return 'SDET';
+  }
+
+  getFullname() {
+    return this.fullname;
+  }
+
+  getAge() {
+    return this.age;
+  }
+}
+
+const bermet = new Batch10Student('Bermet S', 20);
+const alina = new Batch10Student('Alina', 21);
+
+bermet.getFullname();
+
+Batch10Student.getProgramName();
+
+
+class AppleStore {
+  constructor(id, city, state, zip) {
+
+  }
+
+  static getIphone16ProMaxPrice() {
+
+  }
+}
+
+
+
+HTML - HyperText Markup Language 
+It is not a programming language because you cannot create functions with it. 
+
+
+Web Application: Any app you visit on browsers
+Mobile Application: Any app you download from AppStore or GooglePlay 
+Hybrid Application: You can on web and also install on your mobile devices 
+
+Desktop Application: Robot Framework (Python)
+
+Web Application: is consist of many web pages
+Each web page is created using HTML 
+Each web page is created using web elements 
+
+Each web element is represented by an HTML tag 
+<p></p>
+<img/>
+<div></div>
+
+<button>Apply Now</button>
+
+Opening tag: <button>
+Closing tag: </button>
+Opening and closing tag / self closing tag: <img/>
+
+
+Tags may have many properties/attributes. All the properties are added as key-values pairs
+in the opening tags 
+
+<tagName attr1="value1" attr2="value2">VISIBLE TEXT</tagName>
