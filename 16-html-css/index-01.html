@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<!-- Everything related to webpage -->
+
+<head>
+  <title>HTML CSS Basics</title>
+  <meta charset="UTF-8"/>
+  <meta name="description" content="Learn free HTML CSS">
+  <meta name="keywords" content="html css javascript tutorial"/>
+  <meta name="author" content="Alex Jones">
+  <style>
+    /* Internal styles */
+    /* Using tag */
+    p {
+      color: blue;
+      font-size: 20px;
+      font-weight: 900;
+      border: 1px solid black;
+      padding: 10px;  
+      margin: 40px;
+    }
+    /* Using id */
+    #purpleText {
+      color: purple;
+    }
+    /* Using class */
+    .greenText {
+      color: green
+    }
+  </style>
+</head>
+
+<body style="background-color: antiquewhite;">
+  <!-- Everything user sees -->
+
+  <!-- Headings -->
+  <h1 style="color: red; font-size: 18px;">h1: HTML CSS Basics Class</h1>
+  <h2>This is h2 heading</h2>
+  <h3>This is h3 heading</h3>
+  <h4>This is h4 heading</h4>
+  <h5>This is h5 heading</h5>
+  <h6>This is h6 heading</h6>
+
+  <!-- Paragraph -->
+   <p>This is a paragraph. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+    Exercitationem esse quia temporibus velit voluptate natus assumenda rerum fugiat similique hic? 
+    Sint reiciendis dolorum quas porro rerum veniam, at quisquam ea!</p>
+
+    <!-- Nesting elements -->
+    <p id="purpleText">This is bold text: <b>Bold text</b></p>
+    <p class="greenText">This is bold text: <strong>Bold text</strong></p>
+    <p>This is italic text: <i>Italic text</i></p>
+    <p>This is italic text: <em>Italic text</em></p>
+
+    <!-- Semantic html -->
+     <div style="background-color: aqua;">Header
+      <div data-test-id="test-example">Navigation</div>
+     </div>
+     <div>Content of my site</div>
+     <div>Footer</div>
+     <!-- Same code above but more meaningful -->
+     <header>Header
+      <nav>Navigation</nav>
+     </header>
+     <main>Content of my site</main>
+     <footer>Footer</footer>
+
+     <!-- hr -->
+     <hr/>
+     <!-- <hr>Content</hr> -->
+
+     <div>
+      <img src="./download.jpeg" alt="Image of cute cat" height="150" width="200"/>
+      <caption>Cute cat</caption>
+     </div>
+
+     <!-- List elements -->
+      <h4>My favorite colors:</h4>
+      <ul>
+        <li>White</li>
+        <li>Yellow</li>
+        <li>Green</li>
+      </ul>
+
+      <h4>Steps to finish this course</h4>
+      <ol>
+        <li>Sign up</li>
+        <li>Study</li>
+        <li>Apply</li>
+      </ol>
+
+      <a href="https://www.google.com/">Link to google.com</a>
+      <a href="https://www.google.com/" target="_blank">Link to google.com on new tab</a>
+
+
+
+      <div id="timer">
+        <p>Timer: 10:30 AM</p>
+      </div>
+
+      <div>
+        <section class="blog">
+          Article 1: Lorem ipsum dolor sit amet.
+        </section>
+        <section class="blog">
+          Article 2: Lorem ipsum dolor sit amet.
+        </section>
+        <section class="blog">
+          Article 3: Lorem ipsum dolor sit amet.
+        </section>
+      </div>
+</body>
+</html> 
