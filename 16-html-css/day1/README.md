@@ -28,6 +28,8 @@
 
 --**Link element**: `<a href="url"></a>` Creates a link
 
+--**span**: Another useful html element. Can be used to style nested texts differently.
+
 ## CSS
 
 - 3 ways of applying CSS to HTML

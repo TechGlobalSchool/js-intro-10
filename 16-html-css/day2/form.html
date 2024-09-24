@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Forms</title>
+  <!-- Connect external css file -->
+  <link rel="stylesheet" href="form.css">
+  <!-- <link rel="stylesheet" href="../form.css"> If it was in outer folder.Give correct path to css file -->
+</head>
+<body>
+    <h1>HTML Forms</h1>
+
+    <form>
+     <div class="group">
+      <label for="name">Name</label>
+      <input type="text" placeholder="Name" id="name"/> 
+     </div>
+
+      <div class="group">
+        <label for="lName">Last Name</label>
+        <input type="text" placeholder="Last Name" id="lName"/>
+      </div>
+      
+      <div class="group">
+        <label for="email">Email</label>
+        <input type="email" placeholder="Email" id="email"/>
+      </div>
+      
+      <div class="group">
+        <label for="password">Password</label>
+        <input type="password" id="password"/>
+      </div>
+      
+      <div class="group">
+        <label for="age">Age</label>
+        <input type="number" placeholder="Age" id="age" max="10" min="0"/>
+      </div>
+
+      <div class="group">
+        <p>Are you male or female?</p>
+        <label for="male">Male</label>
+        <input type="radio" id="male" name="gender"/>
+
+        <label for="female">Female</label>
+        <input type="radio" id="female" name="gender"/> 
+      </div>
+
+      <div class="group">
+        <p>Where did you hear about us?</p>
+        <label for="google">Google Search</label>
+        <input type="checkbox" id="google" />
+
+        <label for="instagram">Instagram</label>
+        <input type="checkbox" id="instagram" /> 
+
+        <label for="friend">Friend</label>
+        <input type="checkbox" id="friend" /> 
+
+      </div>
+
+      <div class="group">
+        <label for="friend">Choose your start date?</label>
+        <input type="date" id="friend"/>
+      </div>
+
+      <div class="group">
+        <label for="color">Choose your fav color?</label>
+        <input type="color" id="color"/>
+      </div>
+
+      <div class="group">
+        <label for="product">Cars</label>
+        <select id="product">
+          <option value="toyota">Toyota</option>
+          <option value="bmw">BMW</option>
+          <option value="chrysler">Chrysler</option>
+        </select>
+      </div>
+
+      <div class="group">
+        <label for="message">Please leave your message</label>
+        <textarea placeholder="Your message" id="message" rows="10"></textarea>
+      </div>
+
+      <!-- Submit -->
+      <button type="submit">Submit</button>
+
+    </form>
+
+</body>
+</html> 

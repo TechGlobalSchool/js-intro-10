@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: lightgray;
+}
+
+h1 {
+  text-align: center;
+}
+
+p {
+  font-weight: 900;
+}
+
+/* FORM */
+form {
+  background-color: #fff;
+  width: 400px;
+  margin: auto;
+  padding: 10px;
+}
+
+input,
+label, textarea {
+  width: 100%;
+}
+
+input[type="radio"],
+input[type="checkbox"],
+input[type="date"] {
+  width: auto;
+}
+
+.group {
+  margin-bottom: 20px;
+}
