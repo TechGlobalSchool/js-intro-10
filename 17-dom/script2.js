@@ -81,7 +81,7 @@ console.log(boxes2); // Only returns first element
 const boxes3 = document.querySelectorAll('.box');
 console.log(boxes3); // NodeList[3]
 
-console.log('querySelectorALL ------ ');
+console.log('querySelectorAll ------ ');
 // forEach()
 boxes3.forEach(el => console.log(el));
 
@@ -93,7 +93,7 @@ for (const entry of boxEntries) {
   console.log(entry)
 }
 
-console.log('querySelectorALL ------ ');
+console.log('querySelectorAll ------ ');
 
 
 
