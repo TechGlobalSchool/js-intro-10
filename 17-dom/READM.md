@@ -27,4 +27,14 @@ Window object provides useful methods to work with
 - Scrolls to particular coordinate in the page
 
 - **1.6 LocalStorage**
-- 
+- Type of browser storage
+
+
+# ACCESSING Elements
+- All the ways of accessing elements in DOM
+
+1. getElementById()
+2. getElementsByClassName()
+3. getElementsByTagName()
+4. querySelector()
+5. querySelectorAll()

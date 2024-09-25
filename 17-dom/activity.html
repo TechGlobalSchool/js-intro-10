@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Activity</h1>
+
+    <script>
+      /* 
+      Activity Instructions
+
+      1. Prompt for Name:
+
+      - Use prompt() to ask the user for their name and store the response in a variable userName.
+      - If the user provides a name, display a welcome message using alert() that includes their name.
+      - If the user does not provide a name or clicks "Cancel", display an error message in the console saying: "You did not provide your name. Bye Bye!" 
+
+      2. Confirm to Continue:
+      - After displaying the welcome message, ask the user if they want to continue using confirm().
+      - If the user selects "OK", show an alert confirming their choice to continue.
+      - If the user selects "Cancel", show an alert indicating the action was canceled.
+
+      3. Log Screen Details:
+      - Log the browser's inner width and height (innerWidth and innerHeight) to the console.
+  
+      4. Reload the Page:
+      - Inform the user via console.log() that the page will reload in 10 seconds.
+      - Use setTimeout() to reload the page after 10 seconds using window.location.reload().
+     */
+
+      // Solution
+      // Ask username
+      const userName = prompt("What is your name?");
+
+      // Check if user provided name or not
+      if (userName && userName.length > 0) {
+        // Confirm if user wants to continue
+        const IsContinue = confirm("Do you still want to continue?");
+
+        if (IsContinue) {
+          alert("You chose to continue. Yay");
+
+          // Print screen details
+          console.log(
+            `Your inner screen sizes are height: ${innerHeight} and width: ${innerWidth}`
+          );
+
+          // Let user know about page reload
+          let TIMER = 10000;
+          console.log(`Page is about to reload in ${TIMER} seconds`);
+
+          // Reload
+          setTimeout(() => {
+            window.location.reload();
+          }, TIMER)
+
+        } else {
+          alert("You chose not to continue! Sorry to see you go!");
+        }
+
+      } else {
+        console.log("Sorry name not provided! Bye Bye!");
+      }
+    </script>
+  </body>
+</html>
