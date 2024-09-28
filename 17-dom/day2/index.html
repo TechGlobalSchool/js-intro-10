@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Changing/Updating node Attributes</h1>
+
+  <img src="https://cdn.britannica.com/59/94459-050-DBA42467/Skyline-Chicago.jpg" alt="example"/>
+
+  <script>
+    // 2 ways of changing dom attributes
+    const imageEl = document.querySelector('img');
+
+    /**
+     * 1. Dot notation
+     */
+
+    // Add
+    imageEl.height = 200;
+    
+    // Get
+    const imgSrc = imageEl.src;
+    console.log(imgSrc); // works
+
+    // Update
+    imageEl.src = 'https://www.travelandleisure.com/thmb/wwUPgdpCUuD5sAPFLQf4YasjH0M=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/chicago-illinois-CHITG0221-e448062fc5164da0bba639f9857987f6.jpg'
+
+    /**
+     * 2. Using setAttribute(), getAttribute() methods
+     */
+
+    // Add
+    imageEl.setAttribute('width', 400);
+
+    // Get
+    const imgWidth = imageEl.getAttribute('width'); // 400
+    console.log(imgWidth)
+
+    // Update
+    imageEl.setAttribute('width', 600); // works
+
+  </script>
+</body>
+</html>
