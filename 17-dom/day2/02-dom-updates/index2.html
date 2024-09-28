@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Working with Node content</h1>
+
+  <div id="box">
+    <!-- empty -->
+  </div>
+  <script>
+    const box = document.getElementById('box');
+    /**
+     * innerHTML
+     */
+
+    box.innerHTML = 'Box content' // p text
+
+    box.innerHTML = '<p>This is paragraph inside box</p>' // added p
+
+    // Problem: Last innerHTML is overrding all previous ones.
+    // Solution:
+    box.innerHTML += '<p>Last sentence in box</p>'
+
+    /**
+     * textContent
+     */
+    
+    box.textContent += '<p>Text content</p>' // Doesn't know how to parse html
+    box.textContent += 'Text content' //  Works fine
+
+    /**
+     * textText
+     */
+     box.innerText += '<p>Inner text</p>' // Doesn't know how to parse html
+     box.innerText += 'Inner text' //  Works fine
+
+     /**
+      * createElement
+      */
+     const h4El = document.createElement('h4');
+     console.log(h4El);
+
+     h4El.innerHTML = 'h4 element content'; // Note: Alternatively you can use createTextNode()
+     console.log(h4El);
+
+    // Add element to the dom
+    // box.innerHTML = h4El; // Error: [object HTMLHeadingElement]
+
+    /**
+     * append() or appendChild()
+     */
+    box.append(h4El); // Works
+
+    const h5El = document.createElement('h5');
+    h5El.textContent = 'h5 text content'
+    box.appendChild(h5El); // Works
+
+    // Add multiple nodes
+    const p1 = document.createElement('p');
+    p1.textContent = 'p1 text content'
+
+    const p2 = document.createElement('p');
+    p2.textContent = 'p2 text content'
+
+    const p3 = document.createElement('p');
+    p3.textContent = 'p3 text content'
+
+    const p4 = document.createElement('p');
+    p4.textContent = 'p4 text content'
+
+    box.append(p1, p2); // Works fine
+    box.appendChild(p3, p4); // No error but only adds the first one
+
+    box.append('<p>Append content</p>'); // Works but doesn't parse
+    box.appendChild('<p>Append content 2</p>'); // Doesn't work
+
+  </script>
+</body>
+</html>
